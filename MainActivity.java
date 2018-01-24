@@ -35,11 +35,12 @@ public class MainActivity extends AppCompatActivity {
             display(quantity);
         }
     }
+
     /**
      * This method is called when the order button is clicked.
      */
     public void submitOrder(View view) {
-        int numberOfCups=2;
+        int numberOfCups = 2;
         display(numberOfCups);
         displayPrice(numberOfCups * 5);
     }
