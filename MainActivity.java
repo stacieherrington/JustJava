@@ -29,20 +29,17 @@ public class MainActivity extends AppCompatActivity {
     public void decrement(View view) {
         if (quantity > 0) {
             quantity = quantity - 1;
-            display(quantity);
         } else {
             quantity = 0;
-            display(quantity);
         }
+        display(quantity);
     }
 
     /**
      * This method is called when the order button is clicked.
      */
     public void submitOrder(View view) {
-        int numberOfCups = 2;
-        display(numberOfCups);
-        displayPrice(numberOfCups * 5);
+        displayPrice(quantity * 5);
     }
 
     /**
